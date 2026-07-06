@@ -5,7 +5,7 @@ layout: single
 author_profile: true
 ---
 
-I've spent the last 8 months focused on offensive security, earning my first certification - Hack The Box's CPTS. My current goal is to become a CHECK Team Member, while further improving my web application security knowledge.
+I've spent the last 9 months focused on offensive security, earning my first certification - Hack The Box's CPTS. My current goal is to become a CHECK Team Member, while further improving my web application security knowledge.
 
 ## Background
 
