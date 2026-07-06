@@ -5,13 +5,27 @@ layout: single
 author_profile: true
 ---
 
-I'm qvq (:
+I've spent the last 8 months focused on offensive security, earning my first certification - Hack The Box's CPTS. My current goal is to become a CHECK Team Member, while further improving my web application security knowledge.
+
+## Background
+
+I come from an IT Support background, and more recently worked as a SOC analyst. This showed me how systems and networks are both built and defended - knowledge I'm now putting to use as I build a career in pentesting.
+
+A colleague (now a good friend and mentor) invited me to attend a monthly security conference, DC151, sparking my initial interest and leading me to pursue offensive security.
 
 ## What you'll find here
 
-HTB writeups, research, yapping TBC 
+- CTF writeups
+- Deep dives and research
+- Tool cheatsheets
+- An occasional rant
+
+## Certifications
+
+- Certified Penetration Testing Specialist (CPTS) - Hack The Box (June 2026)
 
 ## Contact
 
-- GitHub: [qvqsec](https://github.com/qvqsec)
-- Discord: _qvq.
+- [GitHub](https://github.com/qvqsec)
+- [Discord](https://discord.com/users/1434898704350974012)
+- [LinkedIn](https://www.linkedin.com/in/jordan-todd-tech)
