@@ -27,5 +27,4 @@ A colleague (now a good friend and mentor) invited me to attend a monthly securi
 ## Contact
 
 - [Discord](https://discord.com/users/1434898704350974012)
-- [LinkedIn](https://www.linkedin.com/in/jordan-todd-tech)
 - [GitHub](https://github.com/qvqsec)
