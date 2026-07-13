@@ -7,7 +7,6 @@ date: 2026-07-13
 
 Tombwatcher is a medium-rated box that begins with an assumed breach scenario. It showcases the use of BloodHound to map a path to a user, who is able to recover objects from the AD recycle bin. From there, I recover a deleted account that lets me exploit ESC15 to take over the administrator.
 
-> [!note] Credentials
 > HackTheBox have provided us with credentials, simulating an assumed AD breach scenario:
 > 
 > User: `henry`
@@ -213,7 +212,6 @@ After loading BloodHound, I find a path to a domain user named `john`.
 ![BloodHound](/assets/img/tombwatcher/bloodhound.png)
 
 ## BloodHound AD Chain
-The chain will look like the following:
 
 - Kerberoast `alfred`, write an SPN to Alfred using Henry to authenticate, request Alfred's kerberos ticket, and crack it offline.
 - Add `alfred` to `infrastructure` - self-add to inherit the group's rights.
@@ -349,7 +347,6 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 [*] NT hash for 'john': ad9324754583e3e42b55aad4d3b8d2bf
 ```
 
-> [!note] Note
 > Another reminder to always leave the domain in the state you found it. All changes made in the chain above should be reverted once testing is complete.
 
 ## User Foothold
@@ -387,7 +384,7 @@ Mode                LastWriteTime         Length Name
 ```
 
 ## Privilege Escalation
-Enumerating further, I find nothing of interest in any user files so I shift my focus to the ADCS configuration.
+With nothing of interest in the user files, I shift my focus to the ADCS configuration.
 
 ### ADCS Enumeration
 I'll use `certipy` to enumerate the templates and find an interesting template `WebServer`.
@@ -453,7 +450,7 @@ Certificate Templates
                                           S-1-5-21-1392491010-1358638721-2126982587-1111
 ```
 
-There is an object not being parsed correctly, so it outputs the SID. At the end of a SID, I'll find the RID is `1111` which is likely to be a user.
+There is an object not being parsed correctly, so it outputs the SID. At the end of the SID, I'll find the RID is `1111` which is likely to be a user.
 
 Querying the SID reveals that no object is found:
 ```sh
@@ -469,7 +466,6 @@ This leads me to believe it has been previously deleted. I'll shift my focus to 
 ### AD Recycle Bin
 I'll use `bloodyAD` once again to enumerate deleted objects, using the LDAP control ending in `417` (`show deleted objects`).
 
->[!note]
 >For a fuller sweep, including recycled and tombstoned objects, you can add the controls ending in `2064` (show recycled) and `2065` (show deactivated links).
 
 ```sh
