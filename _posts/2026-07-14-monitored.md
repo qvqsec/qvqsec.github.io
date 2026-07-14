@@ -14,7 +14,6 @@ Once logged into the dashboard, I'll exploit a SQL injection vulnerability to ex
 ```sh
 ┌──(kali㉿kali)-[~]
 └─$ sudo nmap -p- -T4 10.129.29.223
-[sudo] password for kali:
 Starting Nmap 7.99 ( https://nmap.org ) at 2026-07-13 09:19 +0100
 Nmap scan report for 10.129.29.223
 Host is up (0.042s latency).
@@ -124,6 +123,7 @@ dashboards              [Status: 301, Size: 344, Words: 20, Lines: 10, Duration:
 ```
 
 I'll find an endpoint `/terminal`, but researching this leads to me finding out it's something called `Shell In a Box` which is a web-based terminal emulator for the SSH protocol.
+
 ![Shell In A Box](/assets/img/monitored/shellinabox.png)
 
 ## SNMP - 161/udp
@@ -159,7 +159,9 @@ Copyright (c) 2005-2015 by Matteo Cantoni (www.nothink.org)
 Here, I'll find credentials for `svc`. I attempt to use these credentials everywhere, and find something interesting on the nagiosxi login page.
 
 ![Svc Login 1](/assets/img/monitored/svc1.png)
+
 ![Svc Login 2](/assets/img/monitored/svc2.png)
+
 ![Svc Login 3](/assets/img/monitored/svc3.png)
 
 The error messages suggest `svc` credentials are correct, however the account is disabled. This will make more sense shortly.
