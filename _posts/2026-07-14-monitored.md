@@ -5,7 +5,7 @@ date: 2026-07-14
 
 ## Overview
 
-Monitored is a medium-rated Linux box running NagiosXI, a network monitoring platform. I'll obtain credentials via SNMP and use them to authenticate to the Nagios API, retrieving an authentication token that bypasses the login page.
+Monitored is a medium-rated Linux machine running NagiosXI, a network monitoring platform. I'll obtain credentials via SNMP and use them to authenticate to the Nagios API, retrieving an authentication token that bypasses the login page.
 
 Once logged into the dashboard, I'll exploit a SQL injection vulnerability to extract an administrator API key, which I use to create a new admin account via the API. As admin, I'll abuse a built-in command execution functionality to land a reverse shell. Finally, I'll exploit a misconfigured sudo rule on a script to escalate to root.
 
@@ -76,7 +76,7 @@ PORT    STATE SERVICE
 Nmap done: 1 IP address (1 host up) scanned in 57.35 seconds
 ```
 
-Interesting findings:
+Key findings:
 
 - TLS certificate and HTTP redirect suggests a VHost `nagios.monitored.htb`, which I'll add to my `/etc/hosts` file.
 - SNMP is open, I'll definitely look to enumerate this as a priority.
