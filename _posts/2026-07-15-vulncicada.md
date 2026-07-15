@@ -8,7 +8,7 @@ date: 2026-07-15
 VulnCicada is a medium-rated Windows Active Directory machine. Kerberos is used exclusively for authentication, as NTLM is disabled domain-wide. First, I'll find a password inside an image on a public NFS share. With a set of credentials, I'll find the machine is vulnerable to ESC8, exploitable here via a Kerberos-based relay variant rather than the classic NTLM relay. Finally, I'll dump hashes and compromise the domain administrator, owning the domain.
 
 ## Recon
-#### Nmap
+### Nmap
 ```shell
 ┌──(kali㉿kali)-[~]
 └─$ sudo nmap -p- -T4 -Pn 10.129.234.48
@@ -155,7 +155,7 @@ I'll start by adding the FQDN (`DC-JPQ225.cicada.vl`) and domain (`cicada.vl`) t
 
 ![IIS](/assets/img/vulncicada/IIS1.png)
 
-Since DNS is open, I'll perform targeted DNS enumeration, which only reveals the global catalog subdomain. I'll attempt subdomain fuzzing, but again find nothing. For directory fuzzing, I only find the iisstart.htm landing page.
+Since DNS is open, I'll perform targeted DNS enumeration, which only reveals the global catalog subdomain. I'll attempt subdomain fuzzing, but again find nothing. For directory fuzzing, I only find the `iisstart.htm` landing page.
 
 ## NFS - 2049/tcp
 Here, I'll find a list of folders on a NFS share named `profiles`.
