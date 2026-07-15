@@ -140,10 +140,9 @@ Nmap done: 1 IP address (1 host up) scanned in 101.49 seconds
 Key findings:
 
 - Port structure represents a Domain Controller (53,88,389,445).
-- IIS - Microsoft IIS httpd 10.0
-- NFS open.
+- IIS - Microsoft IIS httpd 10.0.
+- NFS/SMB/LDAP open for enumeration.
 - FQDN of host fingerprinted via LDAP (`DC-JPQ225.cicada.vl`).
-- Clock skew of -1 hour, I'll need to sync my clock with the Domain Controller.
 
 ## Web - 80/tcp
 I'll start by adding the FQDN (`DC-JPQ225.cicada.vl`) and domain (`cicada.vl`) to my `/etc/hosts` file.
@@ -156,11 +155,7 @@ I'll start by adding the FQDN (`DC-JPQ225.cicada.vl`) and domain (`cicada.vl`) t
 
 ![IIS](/assets/img/vulncicada/IIS1.png)
 
-Since DNS is open, I am able to perform targeted DNS enumeration, however this only reveals the global catalog subdomain (`gc._msdcs.cicada.vl`).
-
-I'll fuzz for subdomains using the Domain Controller as my resolver, which reveals a few additional subdomains, though none prove useful. 
-
-For directory fuzzing, I only find the `iisstart.htm` landing page.
+Since DNS is open, I'll perform targeted DNS enumeration, which only reveals the global catalog subdomain. I'll attempt subdomain fuzzing, but again find nothing. For directory fuzzing, I only find the iisstart.htm landing page.
 
 ## NFS - 2049/tcp
 Here, I'll find a list of folders on a NFS share named `profiles`.
@@ -254,7 +249,7 @@ Valid starting     Expires            Service principal
         renew until 16/07/26 00:48:12
 ```
 
-Validation:
+Validation of successful Kerberos authentication:
 ```sh
 ┌──(kali㉿kali)-[~]
 └─$ nxc smb DC-JPQ225.cicada.vl -u rosie.powell -p Cicada123 -k
