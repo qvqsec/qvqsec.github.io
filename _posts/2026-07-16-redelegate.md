@@ -548,12 +548,11 @@ distinguishedName: CN=FS01,CN=Computers,DC=redelegate,DC=vl
 userAccountControl: WORKSTATION_TRUST_ACCOUNT
 ```
 
-It appears default for an untouched machine account. Looking at Microsoft's documentation on `UserAccountControl` flags, I'll find the following:
+It appears default for an untouched machine account. Looking at Microsoft's documentation on `UserAccountControl` flags, I'll find the following decimal values on the property flags:
 
-| Property flag                  | Value in hexadecimal | Value in decimal |
-| ------------------------------ | -------------------- | ---------------- |
-| WORKSTATION_TRUST_ACCOUNT      | 0x1000               | 4096             |
-| TRUSTED_TO_AUTH_FOR_DELEGATION | 0x1000000            | 16777216         |
+- **WORKSTATION_TRUST_ACCOUNT** - 4096
+- **TRUSTED_TO_AUTH_FOR_DELEGATION** - 16777216
+
 I'll need to give `bloodyad` the total in decimals to add the `TRUSTED_TO_AUTH_FOR_DELEGATION` property flag.
 
 16777216 + 4096 = 16781312
