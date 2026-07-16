@@ -4,7 +4,6 @@ date: 2026-07-15
 ---
 
 ## Overview
-
 VulnCicada is a medium-rated Windows Active Directory machine. Kerberos is used exclusively for authentication, as NTLM is disabled domain-wide. First, I'll find a password inside an image on a public NFS share. With a set of credentials, I'll find the machine is vulnerable to ESC8, exploitable here via a Kerberos-based relay variant rather than the classic NTLM relay. Finally, I'll dump hashes and compromise the domain administrator, owning the domain.
 
 ## Recon

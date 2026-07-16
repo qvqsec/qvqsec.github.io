@@ -4,9 +4,7 @@ date: 2026-07-16
 ---
 
 ## Overview
-Redelegate is a hard-rated Windows Active Directory Machine that showcases enumeration to find credentials in a `KeePass` Database file. I'll find credentials valid for MSSQL, leading to RID brute-forcing and discovery of domain usernames. I'll conduct a password spray attack on a curated list of users and find valid domain credentials for `marie.curie`.
-
-I then follow a short AD chain to gain a foothold on the domain controller as `helen.frost`, and discover the `SeEnableDelegationPrivilege` assigned to this user. Finally, I'll perform a Constrained delegation attack to take over the domain.
+Redelegate is a hard-rated Active Directory box focusing on credential leakage, lateral movement, and delegation abuse. This writeup covers extracting MSSQL credentials from KeePass, RID brute-forcing domain accounts, password spraying to catch a foothold as `marie.curie`, and ultimately abusing `SeEnableDelegationPrivilege` on `helen.frost` via Constrained Delegation to compromise the entire domain.
 
 ## Recon
 ### Nmap

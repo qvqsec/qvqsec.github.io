@@ -4,7 +4,6 @@ date: 2026-07-13
 ---
 
 ## Overview
-
 Tombwatcher is a medium-rated Windows Active Directory machine that begins with an assumed breach scenario. It showcases the use of BloodHound to map a path to a user, who is able to recover objects from the AD recycle bin. From there, I recover a deleted account that lets me exploit ESC15 to take over the administrator.
 
 > HackTheBox have provided us with credentials, simulating an assumed AD breach scenario:
