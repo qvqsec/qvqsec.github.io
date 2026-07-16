@@ -482,6 +482,7 @@ RustHound-CE Enumeration Completed at 12:32:27 on 07/16/26! Happy Graphing!
 ```
 
 After loading BloodHound, I find a path to own `FS01.redelegate.vl`.
+
 ![BloodHound](/assets/img/redelegate/bh.png)
 
 First, I'll reset the password of `helen.frost`.
