@@ -11,7 +11,7 @@ I've spent the last 9 months focused on offensive security, earning my first cer
 
 I come from an IT Support background, and more recently worked as a SOC analyst. This showed me how systems and networks are both built and defended - knowledge I'm now putting to use as I build a career in pentesting.
 
-A colleague (now a good friend and mentor) invited me to attend a monthly security conference (one of the Defcon groups), sparking my initial interest and leading me to pursue offensive security.
+A colleague (now a good friend and mentor) invited me to attend a monthly security meetup (one of the Defcon groups), sparking my initial interest and leading me to pursue offensive security.
 
 ## What you'll find here
 
