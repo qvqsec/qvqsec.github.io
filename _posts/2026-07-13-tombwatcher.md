@@ -220,7 +220,7 @@ The chain is the following:
 - Shadow Credentials attack on `john` - `GenericAll` allows me to use `certipy` to add a key credential, then request a TGT via PKINIT and recover John's NT hash.
 
 ### Kerberoast Alfred
-First, I'll write an SPN to `alfred` using `bloodyad`.
+First, I'll write a SPN to `alfred` using `bloodyad`.
 
 ```sh
 ┌──(kali㉿kali)-[~]
