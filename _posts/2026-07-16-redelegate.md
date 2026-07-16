@@ -481,7 +481,7 @@ When retrieving valid domain credentials, most of the time, I like to take a Blo
 RustHound-CE Enumeration Completed at 12:32:27 on 07/16/26! Happy Graphing!
 ```
 
-After loading BloodHound, I find a path to own `FS01.redelegate.vl`.
+After loading BloodHound, I find a path to own `FS01.redelegate.vl`, however that host is not online, this will come into play shortly.
 
 ![BloodHound](/assets/img/redelegate/bh.png)
 
