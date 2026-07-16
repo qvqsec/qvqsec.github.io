@@ -28,3 +28,4 @@ A colleague (now a good friend and mentor) invited me to attend a monthly securi
 
 - [Discord](https://discord.com/users/1434898704350974012)
 - [GitHub](https://github.com/qvqsec)
+- [HackTheBox](https://app.hackthebox.com/users/2675386)

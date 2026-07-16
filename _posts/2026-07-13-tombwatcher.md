@@ -112,7 +112,7 @@ Nmap done: 1 IP address (1 host up) scanned in 89.37 seconds
 
 Key findings:
 
-- General port structure suggests a Domain Controller (88,445,53).
+- General port structure suggests a Domain Controller (53,88,389).
 - IIS Windows Server on port 80 worth enumerating.
 - LDAP script scanning finds the hostname is `DC01.tombwatcher.htb`, and the domain is `tombwatcher.htb`.
 - Clock skew of 4 hours, meaning I'll need to sync my clock with the DC in order to authenticate via Kerberos (Clock skew of 5 minutes or greater will cause Kerberos to reject tickets).
@@ -167,7 +167,7 @@ GPP_PASS... 10.129.232.167  445    DC01             [+] Found SYSVOL share
 GPP_PASS... 10.129.232.167  445    DC01             [*] Searching for potential XML files containing passwords
 ```
 
-## BloodHound
+## BloodHound AD Chain
 After enumerating port 80 and validating the AD credentials, I'll enumerate the domain further using `rusthound-ce` to collect the data and `BloodHound` to map out attack paths.
 
 ```sh
@@ -211,7 +211,7 @@ After loading BloodHound, I find a path to a domain user named `john`.
 
 ![BloodHound](/assets/img/tombwatcher/bloodhound.png)
 
-## BloodHound AD Chain
+The chain is the following:
 
 - Kerberoast `alfred`, write an SPN to Alfred using Henry to authenticate, request Alfred's kerberos ticket, and crack it offline.
 - Add `alfred` to `infrastructure` - self-add to inherit the group's rights.

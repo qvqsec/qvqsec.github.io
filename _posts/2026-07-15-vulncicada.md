@@ -139,7 +139,7 @@ Nmap done: 1 IP address (1 host up) scanned in 101.49 seconds
 
 Key findings:
 
-- Port structure represents a Domain Controller (53,88,389,445).
+- Port structure represents a Domain Controller (53,88,389).
 - IIS - Microsoft IIS httpd 10.0.
 - NFS/SMB/LDAP open for enumeration.
 - FQDN of host fingerprinted via LDAP (`DC-JPQ225.cicada.vl`).
