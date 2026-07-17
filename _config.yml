@@ -37,7 +37,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       toc: true          # table of contents on writeups — handy for long boxes
       toc_sticky: true
