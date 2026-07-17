@@ -1,6 +1,6 @@
-title: "qvqsec"
-name: "qvqsec"
-description: "qvqsec"
+title: "qvq's blog"
+name: "qvq"
+description: "I yap here about security"
 url: "https://qvqsec.github.io"
 repository: "qvqsec/qvqsec.github.io"
 
@@ -15,23 +15,20 @@ plugins:
   - jekyll-sitemap
 
 author:
-  name: "qvqsec"
-  avatar: "/assets/images/avatar.jpg"
-  bio: "CTF Player | HackTheBox"
-  location: "Wherever you want to show"
+  name: "qvq"
+  avatar: "/assets/images/buriaaaal.png"
+  bio: "CTF Player"
+  location: "UK"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://qvqsec.github.io"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/yourhandle"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/yourhandle"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/yourhandle"
+      url: "https://github.com/qvqsec"
+    - label: "HackTheBox"
+      icon: "fab fa-fw fa-HackTheBox"
+      url: "https://app.hackthebox.com/users/2675386"
 
 # Make every post use the single layout, with author sidebar + reading time
 defaults:
