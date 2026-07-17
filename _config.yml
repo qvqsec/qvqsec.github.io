@@ -14,6 +14,25 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
+author:
+  name: "qvqsec"
+  avatar: "/assets/images/avatar.jpg"
+  bio: "CTF Player | HackTheBox"
+  location: "Wherever you want to show"
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://qvqsec.github.io"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/yourhandle"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/yourhandle"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/yourhandle"
+
 # Make every post use the single layout, with author sidebar + reading time
 defaults:
   - scope:
