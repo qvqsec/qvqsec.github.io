@@ -27,7 +27,7 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/qvqsec"
     - label: "HackTheBox"
-      icon: "fab fa-fw fa-flag"
+      icon: "fas fa-fw fa-flag-checkered"
       url: "https://app.hackthebox.com/users/2675386"
 
 # Make every post use the single layout, with author sidebar + reading time
