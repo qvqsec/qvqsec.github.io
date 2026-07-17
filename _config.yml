@@ -16,7 +16,7 @@ plugins:
 
 author:
   name: "qvq"
-  avatar: "/assets/images/buriaaaal.png"
+  avatar: "/assets/img/buriaaaal.png"
   bio: "CTF Player"
   location: "UK"
   links:
@@ -27,7 +27,7 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/qvqsec"
     - label: "HackTheBox"
-      icon: "fab fa-fw fa-HackTheBox"
+      icon: "fab fa-fw fa-flag-checkered"
       url: "https://app.hackthebox.com/users/2675386"
 
 # Make every post use the single layout, with author sidebar + reading time
