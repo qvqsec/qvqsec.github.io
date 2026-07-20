@@ -17,7 +17,7 @@ plugins:
 author:
   name: "qvq"
   avatar: "/assets/img/buriaaaal.png"
-  bio: "CTF Player"
+  bio: "Noob CTF Enjoyer"
   location: "UK"
   links:
     - label: "GitHub"
@@ -26,6 +26,9 @@ author:
     - label: "HackTheBox"
       icon: "fas fa-fw fa-flag-checkered"
       url: "https://app.hackthebox.com/users/2675386"
+    - label: "Discord"
+      icon: "fab fa-fw fa-discord"
+      url: "https://discord.com/users/1434898704350974012"
 
 # Make every post use the single layout, with author sidebar + reading time
 defaults:
