@@ -113,6 +113,6 @@ Simple misconfigurations often carry the highest real-world risk. Relying on hid
 
 The company responded swiftly, patching the issue within 30 minutes and communicated transparently. I appreciate the company being so upfront and thankful for the finding.
 
-Seeing how a simple oversight could impact so many users was a huge eye opener. It’s motivated me to start exploring bug bounty platforms, and explore web application security more.
+Seeing how a simple oversight could impact so many users was a huge eye opener. I feel motivated to start exploring bug bounty platforms, and deepen my web application security knowledge.
 
 ![Honest Work](/assets/img/honest.png)
