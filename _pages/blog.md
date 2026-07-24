@@ -1,6 +1,6 @@
 ---
-title: "CTF"
+title: "Blog"
+permalink: /blog/
 layout: home
-permalink: /ctf/
 author_profile: true
 ---

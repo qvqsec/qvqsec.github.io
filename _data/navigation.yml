@@ -1,5 +1,7 @@
 main:
-  - title: "Writeups"
-    url: /writeups/
+  - title: "Blog"
+    url: /blog/
+  - title: "CTF"
+    url: /ctf/
   - title: "About"
     url: /about/
