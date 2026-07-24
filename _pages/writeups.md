@@ -1,6 +1,0 @@
----
-title: "CTF"
-layout: home
-permalink: /ctf/
-author_profile: true
----
