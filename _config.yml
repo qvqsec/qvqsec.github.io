@@ -49,3 +49,6 @@ defaults:
       author_profile: true
 include:
   - _pages
+category_archive:
+  type: liquid
+  path: /categories/
