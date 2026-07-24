@@ -20,9 +20,11 @@ This appears to be a clear case of Broken Access Control.
 
 ![Members Directory](/assets/img/members1.png)
 
-I asked myself, why on earth should I have access to all of this information? I got a little curious here, and wondered, can anyone see this?
+I asked myself, why on earth should I have access to all of this information? The short answer is: I shouldn't.
 
-## It Gets Worse
+I got a little curious here, and wondered, can anyone see this? Is this just visible to logged-in members?
+
+## It's Worse Than I thought
 Next, I logged out of my members account and appeared to be at the main homepage of the booking system.
 
 ![Home](/assets/img/unauth1.png)
