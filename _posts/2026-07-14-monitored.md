@@ -1,6 +1,7 @@
 ---
 title: "HTB - Monitored"
 date: 2026-07-14
+categories: [ctf]
 ---
 
 ## Overview

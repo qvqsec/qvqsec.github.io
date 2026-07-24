@@ -1,6 +1,7 @@
 ---
 title: "HTB - Redelegate"
 date: 2026-07-16
+categories: [ctf]
 ---
 
 ## Overview

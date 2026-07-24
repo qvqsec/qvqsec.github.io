@@ -1,6 +1,7 @@
 ---
 title: "HTB - VulnCicada"
 date: 2026-07-15
+categories: [ctf]
 ---
 
 ## Overview
