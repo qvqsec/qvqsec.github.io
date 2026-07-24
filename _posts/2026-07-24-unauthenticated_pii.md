@@ -14,7 +14,9 @@ When I logged into the platform, I found a dropdown menu `View` and found it int
 
 ![Dropdown](/assets/img/dropdown.png)
 
-As soon, as the page loaded, I was pretty gobsmacked. As a member, I was able to view the following information; Full names, Email Addresses and Phone numbers. This appears to be a clear case of Broken Access Control.
+As soon as the page loaded, I was surprised by the exposure, yet at the same time, not surprised at all. As a member, I was able to view the following information; Full names, Email Addresses and Phone numbers.
+
+This appears to be a clear case of Broken Access Control.
 
 ![Members Directory](/assets/img/members1.png)
 
