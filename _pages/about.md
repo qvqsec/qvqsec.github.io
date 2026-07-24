@@ -17,9 +17,8 @@ A colleague (now a good friend and mentor) invited me to attend a monthly securi
 
 - CTF writeups
 - Deep dives and research
-- Tool cheatsheets
 - An occasional rant
 
 ## Certifications
 
-- Certified Penetration Testing Specialist (CPTS) - Hack The Box (June 2026)
+- Certified Penetration Testing Specialist (CPTS) - Hack The Box
